@@ -2,10 +2,30 @@ import React from 'react';
 import img1 from './../images/mgi-tours.jpg';
 import img2 from './../images/monkey-mountain.jpg';
 import img3 from './../images/mgi-candles.jpg';
-import img4 from './../images/computer.jpg';
+import img4 from './../images/tpcSecurity.png';
+import img5 from './../images/MgiDashboard.jpg';
 
 const Portfolio = ({id}) => {
   const projects = [
+   
+    {
+      image: img3,
+      title: "Mgi Candles",
+      description: "A platform for forex training, providing resources and guidance for beginners and experts.",
+      url: "https://mgi-candle.vercel.app/",
+    },
+    {
+      image: img5,
+      title: "MGI Dashboard",
+      description: "This is a Developing Dashboard for Administrator to be updating data to Mgi Candles Website.",
+      url: "https://mgi-admin-dashboard.vercel.app/",
+    },
+    {
+      image: img4,
+      title: "Security Incidence Log",
+      description: "Dashboard for security companies to log incident events around the area ie Industrial Area.",
+      url: "https://incidents-log.vercel.app/",
+    },
     {
       image: img1,
       title: "Mgi Tours",
@@ -17,18 +37,6 @@ const Portfolio = ({id}) => {
       title: "Monkey Mountain",
       description: "A luxurious hotel in Zanzibar offering the best hospitality and serene surroundings.",
       url: "https://frankyle.github.io/Monkey-Mountain-web/",
-    },
-    {
-      image: img3,
-      title: "Mgi Candles",
-      description: "A platform for forex training, providing resources and guidance for beginners and experts.",
-      url: "https://mgicandles.vercel.app/",
-    },
-    {
-      image: img4,
-      title: "Mgi Puzzles",
-      description: "An e-commerce platform for selling high-quality and customizable puzzles.",
-      url: "https://example.com/mgi-puzzles",
     },
   ];
 
@@ -45,7 +53,7 @@ const Portfolio = ({id}) => {
         </div>
 
         {/* Project Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
