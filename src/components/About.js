@@ -1,7 +1,8 @@
 import React from "react";
 import img2 from './../images/my_prof.jpg';
+import myCv from './../files/FRANKMAGAICV.pdf';
 
-const About = ({id}) => {
+const About = ({ id }) => {
   return (
     <section id={id} className="py-16 bg-gray-50">
       <div className="container mx-auto px-4 text-center md:text-left flex flex-col md:flex-row items-center">
@@ -17,7 +18,7 @@ const About = ({id}) => {
         {/* Text Section */}
         <div className="md:w-1/2 md:pl-8">
           <div className="flex items-center justify-center md:justify-start mb-4 animate__animated animate__fadeInDown animate__delay-2s">
-              <h2 className="text-3xl font-bold text-gray-800">
+            <h2 className="text-3xl font-bold text-gray-800">
               <span className="relative inline-block">
                 <span className="absolute inset-0 text-blue-500 animate-ping">
                   About Me
@@ -38,6 +39,17 @@ const About = ({id}) => {
             Additionally, I specialize in the professional installation of security systems, including CCTV cameras, electric fences,
             fire alarms, and access control systems, ensuring the safety and protection of your premises.
           </p>
+
+          {/* Download CV Button */}
+          <div className="mt-6">
+            <a
+              href={myCv} // Path to your CV file in the public folder
+              download="Frank_Magai_CV.pdf" // Filename for the downloaded file
+              className="inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-blue-600 transition duration-300"
+            >
+              Download Frank Magai CV
+            </a>
+          </div>
         </div>
       </div>
     </section>
