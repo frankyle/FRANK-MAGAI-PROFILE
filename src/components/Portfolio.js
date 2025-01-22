@@ -5,9 +5,8 @@ import img3 from './../images/mgi-candles.jpg';
 import img4 from './../images/tpcSecurity.png';
 import img5 from './../images/MgiDashboard.jpg';
 
-const Portfolio = ({id}) => {
+const Portfolio = ({ id }) => {
   const projects = [
-   
     {
       image: img3,
       title: "Mgi Candles",
@@ -52,8 +51,24 @@ const Portfolio = ({id}) => {
           <div className="h-1 w-16 bg-blue-500 mx-auto mt-3"></div>
         </div>
 
+        {/* GitHub Link Section */}
+        <div className="mt-12">
+          <p className="text-gray-800 text-lg font-medium">
+            Below is a preview of some of my projects. For more amazing work, visit my{" "}
+            <a
+              href="https://github.com/frankyle"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 font-semibold underline hover:text-blue-800 transition-colors"
+            >
+              GitHub account
+            </a>
+            . <span className="inline-block ml-2 text-blue-600 animate-pulse">⬇</span>
+          </p>
+        </div>
+
         {/* Project Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -66,16 +81,16 @@ const Portfolio = ({id}) => {
                 alt={project.title}
                 className="w-full h-48 object-cover rounded-md mb-4"
               />
-              
+
               {/* Project Title */}
               <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                 <span className="text-blue-500">◈ </span>
                 {project.title}
               </h3>
-              
+
               {/* Project Description */}
               <p className="text-gray-600 text-sm mb-4">{project.description}</p>
-              
+
               {/* Preview Link */}
               <a
                 href={project.url}
