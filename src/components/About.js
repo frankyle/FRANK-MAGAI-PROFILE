@@ -40,7 +40,7 @@ const About = ({ id }) => {
             fire alarms, and access control systems, ensuring the safety and protection of your premises.
           </p>
 
-          {/* Download CV Button */}
+          {/* Download CV Button
           <div className="mt-6">
             <a
               href={myCv} // Path to your CV file in the public folder
@@ -49,7 +49,7 @@ const About = ({ id }) => {
             >
               Download Frank Magai CV
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
