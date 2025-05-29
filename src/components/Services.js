@@ -43,8 +43,8 @@ const Service = ({ id }) => {
     },
     {
       icon: <FaChartLine className="text-4xl text-teal-500" />,
-      title: "Forex Training for Beginners",
-      description: "Providing comprehensive training to help beginners understand and navigate the forex trading market.",
+      title: "Artifitial Inteligence (AI) Tools",
+      description: "Providing comprehensive training to help beginners understand and find good use of different AI Tools.",
     },
     {
       icon: <FaCamera className="text-4xl text-red-500" />,
